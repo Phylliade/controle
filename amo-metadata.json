@@ -1,0 +1,12 @@
+{
+  "categories": { "firefox": ["other"], "android": ["other"] },
+  "summary": {
+    "fr": "Bloque les YouTube Shorts : masque toutes les vignettes et sections Shorts, et remplace les pages /shorts/ par une page de blocage. Fonctionne sur ordinateur et sur Android.",
+    "en-US": "Blocks YouTube Shorts: hides every Shorts thumbnail and shelf, and replaces /shorts/ pages with a block page. Works on desktop and Android."
+  },
+  "description": {
+    "fr": "No Shorts masque les Shorts partout sur YouTube (accueil, abonnements, recherche, chaînes, suggestions, notifications, barre latérale) et empêche l'ouverture de toute URL /shorts/ en affichant une page « Short bloqué » à la place. Aucune collecte de données, aucun réglage, aucun serveur distant.",
+    "en-US": "No Shorts hides Shorts everywhere on YouTube (home, subscriptions, search, channels, suggestions, notifications, sidebar) and prevents any /shorts/ URL from opening by showing a block page instead. No data collection, no settings, no remote server."
+  },
+  "version": { "license": "MIT" }
+}

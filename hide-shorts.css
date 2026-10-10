@@ -1,0 +1,62 @@
+/* ===== Navigation ===== */
+/* Barre latérale (grande et mini) */
+ytd-guide-entry-renderer:has(a[title="Shorts"]),
+ytd-guide-entry-renderer:has(a[href="/shorts"]),
+ytd-mini-guide-entry-renderer[aria-label="Shorts"],
+ytd-mini-guide-entry-renderer:has(a[href="/shorts"]),
+/* Onglet "Shorts" sur une page de chaîne */
+yt-tab-shape[tab-title="Shorts"],
+tp-yt-paper-tab:has(> .tab-content[title="Shorts"]),
+/* Filtre "Shorts" dans les chips de recherche / abonnements */
+yt-chip-cloud-chip-renderer:has(yt-formatted-string[title="Shorts"]),
+/* Mobile : barre de navigation du bas */
+ytm-pivot-bar-item-renderer:has(.pivot-shorts),
+ytm-pivot-bar-item-renderer:has(a[href="/shorts"]) {
+  display: none !important;
+}
+
+/* ===== Étagères / sections Shorts ===== */
+ytd-rich-shelf-renderer[is-shorts],
+ytd-rich-section-renderer:has(ytd-rich-shelf-renderer[is-shorts]),
+ytd-reel-shelf-renderer,
+ytd-item-section-renderer:has(> #contents > ytd-reel-shelf-renderer:only-child),
+ytd-shelf-renderer:has(ytd-reel-item-renderer),
+ytd-shelf-renderer:has(ytm-shorts-lockup-view-model),
+ytd-rich-section-renderer:has(ytm-shorts-lockup-view-model),
+grid-shelf-view-model:has(ytm-shorts-lockup-view-model),
+grid-shelf-view-model:has(ytm-shorts-lockup-view-model-v2),
+/* Mobile */
+ytm-reel-shelf-renderer,
+ytm-rich-section-renderer:has(ytm-reel-shelf-renderer),
+ytm-rich-section-renderer:has(ytm-shorts-lockup-view-model) {
+  display: none !important;
+}
+
+/* ===== Vidéos individuelles qui sont des Shorts ===== */
+/* Accueil, abonnements, recherche, suggestions, chaînes, historique, notifications */
+ytd-rich-item-renderer:has(a[href^="/shorts/"]),
+ytd-rich-item-renderer:has(ytm-shorts-lockup-view-model),
+ytd-rich-item-renderer:has(ytm-shorts-lockup-view-model-v2),
+ytd-video-renderer:has(a[href^="/shorts/"]),
+ytd-video-renderer:has(ytd-thumbnail-overlay-time-status-renderer[overlay-style="SHORTS"]),
+ytd-grid-video-renderer:has(a[href^="/shorts/"]),
+ytd-compact-video-renderer:has(a[href^="/shorts/"]),
+ytd-compact-video-renderer:has(ytd-thumbnail-overlay-time-status-renderer[overlay-style="SHORTS"]),
+ytd-playlist-video-renderer:has(a[href^="/shorts/"]),
+ytd-reel-item-renderer,
+ytm-shorts-lockup-view-model,
+ytm-shorts-lockup-view-model-v2,
+ytd-notification-renderer:has(a[href^="/shorts/"]),
+yt-lockup-view-model:has(a[href^="/shorts/"]),
+/* Mobile */
+ytm-rich-item-renderer:has(a[href^="/shorts/"]),
+ytm-video-with-context-renderer:has(a[href^="/shorts/"]),
+ytm-compact-video-renderer:has(a[href^="/shorts/"]),
+ytm-item-section-renderer:has(> lazy-list > ytm-reel-shelf-renderer:only-child) {
+  display: none !important;
+}
+
+/* Marqueur ajouté par content.js pour les cas que le CSS ne couvre pas */
+[data-no-shorts-hidden] {
+  display: none !important;
+}

@@ -1,0 +1,6 @@
+# Identifiants API AMO (secret en clair)
+env
+# Artefacts de build / signature
+*.xpi
+web-ext-artifacts/
+.amo-upload-uuid
