@@ -1,9 +1,9 @@
 # controle
 
 Outils de contrôle de l'attention. Pour l'instant un seul projet : `no-shorts/`,
+une extension Firefox qui bloque les YouTube Shorts.
 
 Dépôt GitHub : `Phylliade/controle` (racine git = ce dossier, `.gitignore` à la racine).
-une extension Firefox qui bloque les YouTube Shorts.
 
 ## no-shorts : extension Firefox (Manifest V3)
 
